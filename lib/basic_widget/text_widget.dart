@@ -7,7 +7,7 @@ class TextWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("FIC - Text"),
+        title: const Text("MobDev - Text"),
         actions: const [],
       ),
       body: Container(
