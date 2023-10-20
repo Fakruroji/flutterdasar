@@ -13,7 +13,7 @@ class CircleAvatarWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("FIC - CircleAvatar"),
+        title: const Text("Mohammad Fakruroji Nurul Iksan"),
         actions: const [],
       ),
       body: Container(
@@ -24,7 +24,7 @@ class CircleAvatarWidget extends StatelessWidget {
             const CircleAvatar(
               radius: 50,
               backgroundImage: NetworkImage(
-                "https://i.ibb.co/PGv8ZzG/me.jpg",
+                "https://ladob.radiouan.mx/wp-content/uploads/2020/08/unnamed.png",
               ),
             ),
             Row(

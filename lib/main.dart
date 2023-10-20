@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dasar/basic_widget/button_widget.dart';
 import 'package:flutter_dasar/basic_widget/scaffold_widget.dart';
 import 'package:flutter_dasar/basic_widget/container_widget.dart';
+import 'package:flutter_dasar/basic_widget/circle_avatar_widget.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +22,7 @@ class MyApp extends StatelessWidget {
             seedColor: const Color.fromARGB(255, 80, 8, 205)),
         useMaterial3: true,
       ),
-      home: const ContainerWidget(),
+      home:  CircleAvatarWidget(),
     );
   }
 }
