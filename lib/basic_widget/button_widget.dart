@@ -8,28 +8,74 @@ class ButtonWidget extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Mob Dev - Button"),
-        actions: const [],
       ),
       body: Container(
         padding: const EdgeInsets.all(10.0),
-        child: Column(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.end, 
           children: [
-            ElevatedButton(
-              onPressed: () {},
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.blue,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(20),
+            Expanded(
+              child: ElevatedButton(
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.yellow,  
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  shadowColor: Colors.grey[20],
+                  elevation: 5.0,
                 ),
-                shadowColor: Colors.grey[20],
-                elevation: 5.0,
+                child: Text(
+                  "1".toUpperCase(),
+                  style: const TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.w500,
+                    color: Colors.white,
+                  ),
+                ),
               ),
-              child: Text(
-                "Add To Cart".toUpperCase(),
-                style: const TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.w500,
-                  color: Colors.white,
+            ),
+            const SizedBox(width: 10),  
+            Expanded(
+              child: ElevatedButton(
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.blue,  
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  shadowColor: Colors.grey[20],
+                  elevation: 5.0,
+                ),
+                child: Text(
+                  "2".toUpperCase(),
+                  style: const TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.w500,
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+            ),
+            const SizedBox(width: 10), 
+            Expanded(
+              child: ElevatedButton(
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.white,  
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  shadowColor: Colors.grey[20],
+                  elevation: 5.0,
+                ),
+                child: Text(
+                  "3".toUpperCase(),
+                  style: const TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.w500,
+                    color: Colors.black,  
+                  ),
                 ),
               ),
             ),
